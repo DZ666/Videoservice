@@ -1,0 +1,364 @@
+@import "./Main.sass"
+@import "./SendDataForm.sass"
+
+footer
+	width: 100%
+
+	font-family: "Roboto"
+	font-size: 14px
+	line-height: 26px
+	font-weight: 300
+	color: #fff
+
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+
+	background: rgba(242, 242, 242, 1)
+
+	@media screen and (max-width: $large)
+		background-size: cover
+		background-position: top left
+		padding: 23px 15px 28px 15px
+
+	@media screen and (max-width: $medium)
+		background-size: cover
+		background-position: top left
+		padding: 23px 15px 28px 15px
+
+	padding: 23px 0 28px 0
+
+	a
+		text-decoration: none
+		color: #fff
+
+		word-spacing: -0.5px
+		letter-spacing: 0
+
+		&:hover
+			color: $SkyBlue
+
+	*
+		margin: 0
+
+		justify-content: center
+
+	.row>*
+		padding-left: 0
+		padding-right: 0
+
+	.inner-footer
+		width: 100%
+		max-width: 1180px
+
+		display: flex
+		justify-content: flex-start
+
+
+		*
+			font-family: "Rubik"
+			font-weight: 400
+			color: rgba(51, 51, 51, 1)
+			font-size: 16px
+			line-height: 18.96px
+
+		.footer-logo
+			padding-right: 40px
+
+		.tel-links-wrapper
+			width: 100%
+			padding-bottom: 10px
+			a
+				&:hover
+					color: rgba(51, 51, 51, 1)
+
+		.geo-link-wrapper
+			width: 100%
+			padding-bottom: 6px
+			a
+				&:hover
+					color: rgba(51, 51, 51, 1)
+
+		.web-link-wrapper
+			color: rgba(31, 71, 102, 1)
+			a
+				font-weight: 500
+				&:hover
+					color: rgba(31, 71, 102, 1)
+
+		.inner-footer__content-wrapper
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			align-items: flex-start
+			align-content: flex-start
+
+			@media screen and (max-width: $medium)
+				.content-wrapper__logotype
+					display: flex
+					flex-wrap: wrap
+					justify-content: center
+
+					padding-left: 0
+
+					.logotype
+						display: flex
+						justify-content: center
+						padding-bottom: 12px
+
+					p
+						text-align: center
+
+
+				.phone, .location
+					display: flex
+					justify-content: center
+
+	.logotype
+		display: flex
+		width: 100%
+		justify-content: flex-start
+		padding-bottom: 18px
+
+		img
+			height: 45px
+
+	.location
+		padding-bottom: 10px
+
+	.location, .phone
+		display: flex
+		justify-content: flex-start
+
+		padding-left: 18px
+
+	.logo-name
+		font-size: 30px
+		color: $SkyBlue
+		text-align: center
+		font-weight: 200
+		padding-top: 8px
+		padding-left: 13px
+
+	.content-wrapper__location-title
+		display: flex
+		justify-content: flex-start
+		padding-left: 18px
+		padding-top: 9.6px
+		padding-bottom: 25px
+
+	.content-wrapper__logotype
+		padding-left: 39px
+		p
+			line-height: 26px
+
+		@media screen and (max-width: $large)
+			padding-left: 0
+
+	.mh-260
+		max-height: 260px
+
+	.title
+		display: flex
+		justify-content: center
+		align-items: center
+
+		font-size: 15px
+		line-height: 26px
+		font-family: "Roboto"
+		word-spacing: 1.5px
+
+	.footer-links-wrapper
+		display: flex
+		justify-content: flex-start
+		padding-left: 39px
+
+		& a
+			text-decoration: none
+			color: #fff
+			font-weight: bolder
+			transition: .4s
+			white-space: nowrap
+
+		& a + a
+			margin-left: 32px
+
+		a:hover
+			color: $SkyBlue
+
+	.footer-form
+		padding-top: 27px
+		padding-left: 5px
+
+		.submit-btn
+			width: 70px
+			min-width: 70px
+			height: 45px
+			background: url("../images/action-images/send.png")
+			background-color: rgba(255,255,255,.5)
+			background-repeat: no-repeat
+			background-position: center
+			transition: .4s
+			border: none
+			&:hover
+				background-color: rgba(255,255,255,.75)
+		.field-wrapper
+			display: flex
+			justify-content: flex-start
+
+		.field input
+			min-width: 202px
+			height: 45px
+
+			border: 1px solid rgba(255,255,255,.5)
+			background: transparent
+
+			padding-left: 15px
+			margin-right: 8px
+
+			color: #fff
+
+			&::placeholder
+				color: rgba(255,255,255,.75)
+				font-size: 14px
+				line-height: 26px
+				font-weight: lighter
+
+			    letter-spacing: 0.5px
+    			font-size: 10px
+
+	.send-footer-form__social
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+
+		.title
+			width: 100%
+			display: flex
+			justify-content: flex-start
+
+			padding-top: 10px
+			padding-left: 6px
+
+
+	.field-wrapper-social
+		display: flex
+		justify-content: flex-start
+
+		& .social + .social
+			margin-left: 8px
+		.social
+			width: 35px
+			min-width: 35px
+			height: 35px
+			min-height: 35px
+			display: flex
+			justify-content: center
+			align-items: center
+			border-radius: 100%
+			border: 1px solid #fff
+
+	.copyright
+		display: flex
+		justify-content: flex-end
+		align-items: center
+
+		padding-right: 40px
+
+		letter-spacing: 0.2px
+
+	.second-footer-block
+		padding-top: 55px
+
+	@media screen and (max-width: $medium)
+		.mh-260
+			max-height: none
+
+		.ta-md-l
+			text-align: left
+
+		.footer-links-wrapper
+			padding-left: 0
+
+		.copyright
+			display: flex
+			justify-content: center
+			align-items: center
+			padding-right: 0
+
+	@media screen and (max-width: $small)
+
+		.inner-footer
+			padding: 0
+
+		.ta-sm-l
+			text-align:
+
+		.footer-form .field
+			min-width: 180px
+
+		.copyright
+			display: flex
+			justify-content: center
+			align-items: center
+			padding-right: 0
+
+		.footer-links-wrapper
+			padding-top: 16px
+			padding-left: 0
+
+
+			& a + a
+				margin-left: 12px
+
+	@media screen and (max-width: $medium and 1000px)
+		& *
+			justify-content: center
+			text-align: center
+
+		.content-wrapper__location-title
+			width: 100%
+			justify-content: center
+
+		.logotype
+			justify-content: center
+
+		.content-wrapper__location
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			.location, .phone
+				justify-content: center
+				padding: 0
+
+		.title
+			justify-content: center !important
+
+		.field-wrapper
+			justify-content: center !important
+
+		.field-wrapper-social
+			justify-content: center
+
+		.send-footer-form__social
+			justify-content: center
+
+		.footer-links-wrapper
+			justify-content: center
+			padding-left: 0
+
+		.copyright
+			justify-content: center
+			padding-right: 0
+
+
+
+	@media screen and (max-width: $small)
+		.col-md-12, .col-sm-12
+			width: 100%
+
+.field
+	position: relative
+
+ .pb-16
+	 padding-bottom: 16px

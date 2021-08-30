@@ -1,0 +1,116 @@
+@import "./Main.sass"
+
+.quotes
+	width: 100%
+	min-height: 480px
+
+	background: linear-gradient( 90deg, rgba(9,5,47, .85) 0%, rgba(49,29,94, .85) 100%), url("../images/backgrounds/rain-close-forest.png")
+	background-size: cover
+
+	font-family: "PlayfairDisplay"
+
+	padding-top: 65px
+
+	@media screen and (max-width: $large or $medium)
+		padding-bottom: 20px
+
+	.title
+		text-align: center
+		font-size: 80px
+		line-height: 0px
+		padding-top: 30px !important
+		margin-bottom: 30px
+
+	.pb-45
+		padding-bottom: 45px !important
+
+	.sm-t
+		font-size: 15.2px
+		text-align: center
+		color: rgba(255, 255, 255, 0.85)
+		line-height: 25px
+
+	.pb-13
+		padding-bottom: 13px !important
+
+	.white-color
+		font-family: "Roboto"
+		font-size: 14px
+		word-spacing: 1.5px
+		line-height: 14px
+		color: #fff
+
+	.sm-subtitle
+		font-size: 13px
+		line-height: 13px
+		font-family: "Roboto"
+		color: rgba(255,255,255,.7)
+
+	.photos
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-wrap: nowrap
+		width: 100%
+		max-width: 350px
+		height: 70px
+		position: relative
+		.slick-list
+			position: absolute
+			width: 100%
+			left: 50%
+			top: 50%
+			transform: translateX(-50%) translateY(-50%)
+		.slick-slide
+			display: flex !important
+			justify-content: center
+			align-items: center
+		.face
+			& + .face
+				margin-left: 14px
+			border-radius: 100%
+			background: transparent
+
+
+.slick-slider .slick-track, .slick-slider .slick-list img
+	width: 45px
+	height: 45px
+	transition: .4s
+
+
+.slick-slider .slick-track, .slick-slider .slick-list .slick-current img
+	width: 70px
+	height: 70px
+
+
+.review-title .slick-current > *
+	width: 100%
+
+
+.review-title .slick-list .review-title, .slick-slider .review-title
+	width: 100%
+	height: 100%
+
+.employ-review
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	align-items: flex-start
+	padding-bottom: 28px
+
+.review-title .slick-slide .title-wrapper
+
+	@media screen and (max-width: $medium)
+		min-height: 280px
+		align-items: flex-start
+
+	@media screen and (max-width: $small)
+		min-height: 340px
+		align-items: flex-start
+
+.review-title .slick-slide
+	min-height: 280px
+	@media screen and (max-width: $medium)
+		min-height: 400px
+	@media screen and (max-width: $small)
+		min-height: 470px

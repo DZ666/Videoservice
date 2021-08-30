@@ -1,0 +1,331 @@
+// Import Main sass file with all variables
+@import "./Main.sass"
+
+// Header
+header
+	display: flex
+	justify-content: center
+
+	width: 100%
+	max-width: 1180px
+
+	font-family: "Roboto"
+
+	z-index: 10
+
+	background-size: 100%
+	background-repeat: no-repeat
+
+
+	@media screen and (max-width: $large or $medium)
+		padding: 0 15px
+		background-size: cover
+
+	a
+		text-decoration: none
+
+	@media screen and (max-width: $large or $medium or $small)
+		.auth-nav
+			margin-right: 0
+			padding-right: 15px !important
+		.search_field
+			min-width: 220px !important
+
+		.logout_btn
+			margin-left: 12px
+
+	.inner-header
+		width: 100%
+
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		align-items: flex-start
+		align-content: flex-start
+
+		padding: 32px 0 0 0
+
+		.header-logo__nav-wrapper
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			align-items: center
+
+			.inner-header__logotype
+				display: flex
+				flex-wrap: wrap
+				justify-content: flex-start
+				align-items: center
+
+				@media screen and (max-width: $large or $medium or $small)
+					justify-content: center
+					padding-bottom: 15px
+
+			.logo-name
+				font-size: 30px
+				line-height: 23.7px
+				font-size: 20px
+				color: $dark
+				text-align: center
+				font-weight: 500
+				padding-left: 12px
+
+		.inner-header__content
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			align-items: center
+			padding: 150px 0px 0px 0px
+
+		.navigation__close-btn, .navigation__open-btn
+			transition: .75s
+			display: none
+
+		.inner-header__navigation
+			display: flex
+			justify-content: flex-end
+
+			padding-right: 70px
+
+			.search_field
+				min-width: 320px
+				outline: none
+				border: none
+				border-bottom: 1px solid rgba(51, 51, 51, 1)
+				margin-right: 32px
+				padding: 4px 0 0px 0px
+
+			.search_submit
+				border: none
+				background: transparent
+				padding: 0
+				color: rgba(229, 38, 30, 1)
+				letter-spacing: 0.7px
+				padding-top: 4px
+
+				outline: $red
+
+				&[disabled]
+					color: rgba(51,51,51,.4)
+
+			li
+				padding-left: 8px
+				padding-right: 20px
+
+				list-style: none
+				a
+					font-size: 12px
+					color: #fff
+
+
+			@media screen and (max-width: $medium)
+				padding-top: 15px
+				padding-bottom: 18px
+
+		@media screen and (max-width: $small)
+			.navigation__open-btn
+				display: flex
+				content: ""
+				width: 35px
+				height: 35px
+				position: fixed
+				border-radius: 100%
+				right: 14px
+				top: 14px
+				z-index: 4
+				background: #F2C94C
+				background-position: center
+				background-repeat: no-repeat
+
+				.middle-line
+					width: 100%
+					height: 2px
+					background: #fff
+					position: absolute
+					left: 50%
+					top: 50%
+					transform: translate(-50%, -50%) rotateZ(-45deg)
+
+				&:before
+					content: ""
+					width: 80%
+					height: 2px
+					position: absolute
+					left: 12px
+					top: 15px
+					background: #fff
+					transform: translate(-13px, -2px) rotateZ(-45deg)
+				&:after
+					content: ""
+					width: 80%
+					height: 2px
+					position: absolute
+					left: 30px
+					top: 30px
+					background: #fff
+					transform: translate(-23px, -10px) rotateZ(-45deg)
+
+		#nav
+			width: 80%
+			min-height: 230px
+
+			display: none
+			position: fixed
+			right: 0
+			top: 0
+			transform: translateX(100%)
+
+			opacity: 1
+			z-index: 1
+
+			transition: .75s
+
+			padding: 10px
+
+			background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%)
+
+			border-bottom-left-radius: 15px
+
+			padding: 10px
+
+			li
+				list-style: none
+				width: 100%
+
+			a
+				color: #fff
+
+			@media screen and (max-width: $small)
+				display: flex
+				position: fixed
+				top: 0
+				right: 0
+
+		.navigation__closed-opening-btn
+			transform: translateX(200%)
+
+		.opened-nav
+
+			opacity: 1 !important
+
+			position: fixed !important
+			z-index: 10
+
+			transform: translateX(0%) !important
+
+			box-shadow: 1px 3px 10px rgba(48, 41, 79, .8)
+
+			.navigation__close-btn
+				display: block
+				content: ""
+				width: 35px
+				height: 35px
+				position: absolute
+				border-radius: 100%
+				right: 14px
+				top: 14px
+				z-index: 11
+				background: #30294F
+				background-position: center
+				background-repeat: no-repeat
+
+				&:before
+					content: ""
+					width: 80%
+					height: 2px
+					position: absolute
+					left: 50%
+					top: 50%
+					background: #fff
+					transform: translate(-50%, -50%) rotateZ(45deg)
+				&:after
+					content: ""
+					width: 80%
+					height: 2px
+					position: absolute
+					left: 50%
+					top: 50%
+					background: #fff
+					transform: translate(-50%, -50%) rotateZ(-45deg)
+
+		.header__navigation
+			display: flex
+			flex-wrap: wrap
+			justify-content: flex-end
+			min-height: 50px
+			transition: .75s
+
+			li
+				margin-left: 24px
+				list-style: none
+				width: 100%
+
+				a
+					text-decoration: none
+					color: #fff
+					font-size: 13px
+					text-align: right
+					font-weight: 500
+					transition: .4s
+					width: 100%
+
+
+				a:hover
+					color: $SkyBlue
+
+			@media screen and (max-width: $medium)
+				justify-content: center
+
+			@media screen and (max-width: $small)
+				position: fixed
+				right: 0
+				top: 0
+
+				transform: translateX(100%)
+
+				width: 80%
+
+				justify-content: center
+
+
+
+				.navigation__close-btn
+					display: block
+					position: absolute
+
+	@media screen and (max-width: $medium)
+		padding: 70px 15px 70px 15px
+		min-height: 0
+		.inner-header
+			padding-top: 0
+
+		.user-name
+			height: 28px
+			background: rgba(0,0,0,0.03)
+
+		.field input
+			background: rgba(0,0,0,0.03)
+
+		.inner-header__navigation
+			padding-left: 15px
+
+		.header-logo__nav-wrapper
+			justify-content: center !important
+
+	@media screen and (max-width: $small)
+		padding: 70px 15px 70px 15px
+
+		.inner-header
+			padding-top: 0
+			.header-logo_nav-wrapper
+				justify-content: center
+
+.mh-50
+	min-height: 50px
+
+.mb-50
+	margin-bottom: 50px
+
+.pt-15
+	padding-top: 15px

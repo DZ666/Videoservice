@@ -1,0 +1,285 @@
+@import "./Main.sass"
+
+.new-created-videos-wrapper
+	.new-created-video-wrapper
+		display: block
+
+	.slick-list
+		width: 100%
+
+		.slick-track
+			display: flex !important
+
+	.slick-dots
+		li
+			button:before
+				font-size: 8px
+
+	.slick-slide
+		display: flex
+		justify-content: center
+
+.film-wrapper
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+
+	padding: 0 15px
+
+	padding-bottom: 30px
+
+
+	min-height: calc(100vh - (122px + 68px))
+
+	@media screen and (max-width: $large or $medium)
+		.film-texts
+			padding-left: 10px
+
+	.subtitle
+		font-size: 16px
+		font-weight: 400
+		color: rgba(48,48,48,.5)
+
+	.hidden
+		display: none !important
+
+	.no-comments
+		color: rgba(48, 48, 48, .4)
+		width: 100%
+		text-align: center
+
+	.film-info
+		max-width: 1180px
+		width: 100%
+
+		display: flex
+		justify-content: center
+
+		@media screen and (max-width: $small)
+			flex-wrap: wrap
+
+		.film-texts
+			display: flex
+			flex-wrap: wrap
+			align-items: flex-start
+			align-content: flex-start
+			padding: 49px 0 0 120px
+
+			@media screen and (max-width: $large or $medium or $small)
+				padding-left: 10px
+
+			& > div
+				width: 100%
+				display: flex
+
+				padding-bottom: 16px
+
+				@media screen and (max-width: $large or $medium or $small)
+					justify-content: space-between
+
+				h5
+					font-size: 20px
+					line-height: 23.7px
+					padding-left: 25px
+					margin-bottom: 0
+					padding-bottom: 0
+
+					@media screen and (max-width: $large or $medium or $small)
+						text-align: right
+
+				span
+					padding-left: 0.5px
+					min-width: 80px
+
+				p
+					padding-left: 25px
+					padding-bottom: 0
+					margin-bottom: 0
+
+					@media screen and (max-width: $large or $medium or $small)
+						text-align: justify
+
+			.film-description
+				width: 85%
+				p
+					font-size: 16px
+					padding: 4px 0 0 0
+					line-height: 22.4px
+					word-spacing: -3.3px
+					letter-spacing: 0.8px
+
+		.film-img
+			padding: 48px 0 0 100px
+			position: relative
+
+			@media screen and (max-width: 380px)
+				padding-left: 50px
+
+			.go-back
+				position: absolute
+				top: calc(17px + 48px)
+				left: 15px
+
+				user-select: none
+
+			img
+				max-width: 280px
+				max-height: 370px
+				border-radius: 7px
+
+		.film-name, .film-country, .film-genre
+
+		.film-description
+			height: 250px !important
+
+	.film-comments
+		width: 100%
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		padding-top: 47px
+
+		h4
+			width: 100%
+			text-align: center
+			font-size: 20px
+			line-height: 24px
+			margin-bottom: 25px
+			letter-spacing: 0.5px
+
+			@media screen and (max-width: $small)
+				margin-bottom: 70px
+
+		.comments-wrapper
+			width: 840px !important
+			height: 450px !important
+
+			padding-bottom: 18px
+			margin-right: -60px
+
+			@media screen and (max-width: $large or $medium or $small)
+				margin-right: 0
+
+			&:nth-child(1)
+				display: flex
+				flex-wrap: wrap
+				justify-content: center
+				height: 450px !important
+
+			@media screen and (max-width: $large or $medium or $small)
+				width: 600px !important
+
+				.comments-wrapper
+					&:nth-child(1)
+						padding-right: 14px
+
+				.comment
+					width: 90%
+
+			@media screen and (max-width: $small)
+				width: 380px !important
+
+		.comment-form
+			display: flex
+			height: 110px
+			padding-left: 190px
+
+			position: relative
+
+			@media screen and (max-width: 1050px)
+				padding-left: 0
+				.comment-submit
+					position: absolute
+					margin-top: -50px
+					right: 0
+
+			@media screen and (max-width: $small)
+				.comment-submit
+					right: 50%
+					transform: translateX(50%)
+
+			.comment-submit
+				background: #E5261E
+				border-radius: 4px
+				color: #fff
+				border: none
+
+				margin-left: 16px
+				width: 174px
+				height: 38px
+
+
+			.comment-field
+				width: 780px
+				min-height: 110px
+				max-height: 220px
+				border-radius: 10px
+				border: none
+				background: #FBDFDD
+				padding: 16px
+				line-height: 16px
+
+				font-family: "Rubik"
+
+				@media screen and (max-width: $large or $medium)
+					max-width: 600px
+
+				@media screen and (max-width: $small)
+					max-width: 300px
+
+				&::placeholder
+					letter-spacing: 0.2px
+					word-spacing: -2.5px
+					color: #E5261E
+
+	.comment
+		width: 780px
+		background: #F2F2F2
+		border-radius: 8px
+		margin-top: 16px
+		padding: 16px
+
+		position: relative
+
+		.delete-comment-btn
+			width: 18.73px
+			height: 18.73px
+			position: absolute
+
+			right: -31.8px
+			top: 0
+
+			cursor: pointer
+
+			&:before, &:after
+				content: ""
+				width: 100%
+				height: 2px
+				background: #E5261E
+				border-radius: 25px
+
+				position: absolute
+				left: 50%
+				top: 50%
+
+			&:before
+				transform: translate(-50%, -50%) rotateZ(45deg)
+
+			&:after
+				transform: translate(-50%, -50%) rotateZ(-45deg)
+		&:hover
+			.delete-comment-btn
+
+
+		.comment-name
+			font-size: 16px
+			line-height: 16.96px
+			font-weight: 500
+			font-family: "Rubik"
+
+		.comment-text
+			font-family: "Rubik"
+			font-style: normal
+			font-weight: normal
+			font-size: 16px

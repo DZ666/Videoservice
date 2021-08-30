@@ -1,0 +1,212 @@
+.Content
+	width: 100%
+
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+
+	padding-top: 48px
+	padding-bottom: 70px
+
+	.title
+		padding-bottom: 8px
+		letter-spacing: -0.3px
+
+	.genres-title
+		padding-top: 14px
+		padding-bottom: 11px
+
+	.pages-nav-bar
+		width: 100%
+
+		display: flex
+		justify-content: center
+		align-items: flex-start
+
+		padding-bottom: 41px
+
+
+		ul
+			width: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+
+			margin: 0
+			padding: 0
+
+			.page-nav-active
+				color: #E5261E
+				position: relative
+
+				&::before
+					content: ""
+
+					width: 100%
+					height: 1px
+
+					position: absolute
+					bottom: -9px
+					left: 50%
+					transform: translateX(-50%)
+					background: #E5261E
+
+
+			li
+				list-style: none
+				font-family: "Rubik"
+				font-style: normal
+				font-weight: 500
+				font-size: 28px
+				line-height: 33px
+				text-align: right
+				letter-spacing: 0
+				color: #333
+
+				transition: .4s
+
+				cursor: pointer
+
+				user-select: none
+
+				&::before
+					content: ""
+
+					width: 100%
+					height: 1px
+
+					transition: .4s
+
+					position: absolute
+					bottom: -9px
+					left: 50%
+					transform: translateX(-50%)
+					background: rgba(255,255,255,.1)
+
+				& + li
+					margin-left: 24px
+
+	.films-wrapper
+		width: 100%
+		max-width: 1180px
+
+		.new-created-videos-wrapper
+
+			display: flex
+			justify-content: space-between
+			align-items: flex-start
+
+
+
+			.new-created-video
+				display: flex
+				flex-wrap: wrap
+				align-items: flex-start
+				max-width: 280px
+
+				position: relative
+
+				.new-created-video-wrapper
+					width: 280px
+					height: 370px
+
+					position: relative
+
+					border-radius: 8px
+					overflow: hidden
+					transition: .4s
+
+					.new-created-video-wrapper__desctription
+						width: 100%
+						height: 100%
+
+						position: absolute
+						left: 50%
+						bottom: -100%
+						text-decoration: none
+
+						padding: 11px 17px
+
+						color: #F2F2F2
+						font-size: 16px
+						line-height: 22.4px
+						font-weight: 400
+
+						transform: translate(-50%, 100%)
+
+						background: rgba(51,51,51,1)
+						opacity: 0
+
+						transition: 1s
+
+						user-select: none
+
+					&:hover .new-created-video-wrapper__desctription
+						transform: translate(-50%, -100%)
+						opacity: .8
+						transition: .75s
+
+				.new-created-video-text-name
+					padding-top: 16px
+					text-decoration: none
+					color: rgba(51,51,51,1)
+					font-size: 20px
+					p
+						line-height: 24px
+						letter-spacing: 0.3px
+						font-weight: 400
+	a
+		p
+			text-decoration: none
+
+	@media screen and (max-width: 1050px)
+		.genres-title
+			text-align: center
+			padding-top: 50px
+
+	.genres-wrapper
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+		@media screen and (max-width: 1050px)
+			justify-content: center
+
+			.genre
+				margin: 15px
+
+		.genre
+			width: 280px
+			height: 208px
+
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			align-items: flex-end
+
+			color: #fff
+			font-size: 20px
+			line-height: 24px
+			padding: 45px 0 10px 0
+
+			box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.15) inset
+			border-radius: 6px
+
+			cursor: pointer
+
+			.genre-img-wrapper
+				width: 100%
+				display: flex
+				justify-content: center
+
+		.comedy
+			background: linear-gradient(127.83deg, #F2C94C 8.44%, #F29A4A 91.36%)
+
+		.drama
+			background: linear-gradient(127.83deg, #F2994A 8.44%, #EB5757 91.36%)
+
+		.fantastic
+			background: linear-gradient(127.83deg, #56CCF2 8.44%, #2F80ED 91.36%)
+
+		.horror
+			background: linear-gradient(127.83deg, #828282 8.44%, #333333 91.36%)

@@ -1,0 +1,66 @@
+@import "./Main.sass"
+
+.send-data-form
+
+	padding-top: 60px
+	padding-bottom: 65px
+
+	letter-spacing: 0.5px
+
+	.send-data-form__title
+		padding-bottom: 10px
+		display: flex
+		justify-content: center
+		align-items: center
+		word-spacing: 0
+		margin-left: -7.5px
+		letter-spacing: 0.1px
+
+	.fields
+		.field
+
+			padding-top: 14px
+			padding-left: 21px
+			padding-right: 23px
+			padding-bottom: 4px
+			position: relative
+
+			input::placeholder
+				font-size: 14px
+
+			input, textarea
+				width: 100%
+				resize: none
+				border: 1px solid #E5E5E5
+				padding-left: 20px
+				font-size: 14px
+				font-family: "Roboto"
+				outline-color: #413d4b
+				&::placeholder
+					color: rgba(65, 61, 75, .5)
+			input
+				height: 45px
+			textarea
+				padding-top: 17px
+				min-height: 190px
+
+			span
+			    position: absolute
+			    right: 21px
+			    bottom: -12px
+			    font-size: 12px
+			    color: red
+
+		.field-submit
+			width: 100%
+			display: flex
+			justify-content: center
+
+			padding-top: 10px
+
+	@media screen and (max-width: $medium or $large)
+		width: 100%
+
+		.fields .field span
+		    right: 20px
+		    bottom: -10px

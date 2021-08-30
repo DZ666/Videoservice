@@ -1,0 +1,66 @@
+// USER
+// Loading
+export const USER_LOADING = "USER_LOADING";
+export const USER_LOADED = "USER_LOADED";
+
+// Authication
+export const AUTH_ERROR = "AUTH_ERROR";
+export const ACTIVATION_SUCCESS = "ACTIVATION_SUCCESS";
+export const ACTIVATION_FAIL = "ACTIVATION_FAIL";
+export const IS_NOT_ACTIVATED = "IS_NOT_ACTIVATED";
+export const USER_LOADING_ASYNC = "USER_LOADING_ASYNC";
+export const USER_LOADED_ASYNC = "USER_LOADED_ASYNC";
+export const FORGOT_LOADING = "FORGOT_LOADING";
+export const FORGOT_FAIL = "FORGOT_FAIL";
+export const FORGOT_LOADED = "FORGOT_LOADED";
+export const FORGOT_SUCCESS = "FORGOT_SUCCESS";
+
+// Login
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGIN_FAIL = "LOGIN_FAIL";
+export const LOGOUT_SUCCESS = "LOGOUT_SUCCESS";
+export const REMIND_FAIL = "REMIND_FAIL";
+export const CHANGE_PASSWORD_SUCCESS = "CHANGE_PASSWORD_SUCCESS";
+export const CHANGE_PASSWORD_FAIL = "CHANGE_PASSWORD_FAIL";
+export const SET_MAILING = "SET_MAILING";
+
+// Registration
+export const REGISTER_SUCCESS = "REGISTER_SUCCESS";
+export const REGISTER_FAIL = "REGISTER_FAIL";
+
+// ERRORS
+export const GET_ERRORS = "GET_ERRORS";
+export const CLEAR_ERRORS = "CLEAR_ERRORS";
+
+// ALERTS
+export const SUCCESS_ALERT = "SUCCESS_ALERT";
+export const INFO_ALERT = "INFO_ALERT";
+export const ERROR_ALERT = "ERROR_ALERT";
+export const CLEAR_ALERT = "CLEAR_ALERT";
+
+// CURRENCY
+export const CURR_LOADING = "CURR_LOADING";
+export const CURR_FAIL = "CURR_FAIL";
+export const CURR_SUCCESS = "CURR_SUCCESS";
+
+// MONEY
+export const REINVEST_FAIL = "REINVEST_FAIL";
+export const REINVEST_SUCCESS = "REINVEST_SUCCESS";
+
+// TOKEN
+export const REFRESH_TOKEN = "REFRESH_TOKEN";
+export const TRANSFER_SUCCESS = "TRANSFER_SUCCESS";
+
+// LOADING
+export const LOADING = "LOADING";
+export const LOADED = "LOADED";
+export const NEW_SECRET_KEY = "NEW_SECRET_KEY";
+export const NEW_SECRET_KEY_LOADING = "NEW_SECRET_KEY_LOADING";
+
+export const TWO_FA_IS_SAVING = "TWO_FA_IS_SAVING";
+export const TWO_FA_IS_SAVED = "TWO_FA_IS_SAVED";
+
+export const IMAGE_UPLOADING = "IMAGE_UPLOADING";
+export const IMAGE_UPLOADED = "IMAGE_UPLOADED";
+
+export const GOOGLE_TWO_FA_LOGIN = "GOOGLE_TWO_FA_LOGIN";
